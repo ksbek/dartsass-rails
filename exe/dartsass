@@ -12,7 +12,8 @@ exe_path =
   when /aarch64-linux/ then File.join(__dir__, "aarch64-linux/sass")
   when /arm64-darwin/ then File.join(__dir__, "arm64-darwin/sass")
   when /darwin/ then File.join(__dir__, "darwin/sass")
-  when /linux/ then File.join(__dir__, "linux/sass")
+  # when /linux/ then File.join(__dir__, "linux/sass")
+  when /linux/ then "/usr/local/bin/sass"
   when /mswin|mingw|cygwin/ then File.join(__dir__, "mingw32/sass.bat")
   else
     STDERR.puts(<<~ERRMSG)
